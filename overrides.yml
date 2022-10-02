@@ -1,7 +1,10 @@
 image:
   tag: 'latest'
 
-nxCloudAppURL: 'URL_TO_ACCESS_INGRESS_FROM_DEV_MACHINES'
+nxCloudAppURL: 'localhost'
+
+ingress:
+  skip: true
 
 secret:
   name: 'cloudsecret'
