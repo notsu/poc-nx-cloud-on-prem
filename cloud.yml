@@ -65,7 +65,7 @@ spec:
             - containerPort: 4000
           env:
             - name: NX_CLOUD_APP_URL
-              value: http://nx.local
+              value: http://nx.info
             - name: NX_CLOUD_MONGO_SERVER_ENDPOINT
               value: mongodb+srv://admin-user:DB_PASSWORD@cloud-mongodb-svc.mongodb.svc.cluster.local/nrwl-api?replicaSet=cloud-mongodb&ssl=false
 ---
@@ -103,7 +103,7 @@ spec:
             - containerPort: 4203
           env:
             - name: NX_CLOUD_APP_URL
-              value: http://nx.local
+              value: http://nx.info
             - name: NX_CLOUD_MONGO_SERVER_ENDPOINT
               value: mongodb+srv://admin-user:DB_PASSWORD@cloud-mongodb-svc.mongodb.svc.cluster.local/nrwl-api?replicaSet=cloud-mongodb&ssl=false
 ---
@@ -183,7 +183,7 @@ metadata:
     app: nx-cloud
 spec:
   rules:
-    - host: nx.local
+    - host: nx.info
       http:
         paths:
           - path: /file
