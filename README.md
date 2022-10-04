@@ -6,6 +6,8 @@
 - Create a persistent volume
 
 ```sh
+minikube start
+
 helm repo add mongodb https://mongodb.github.io/helm-charts
 helm install community-operator mongodb/community-operator --namespace mongodb --create-namespace
 
